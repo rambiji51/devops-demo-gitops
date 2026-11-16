@@ -2,5 +2,5 @@ replicaCount: 3
 
 vote:
   image:
-    repository: dockersamples/examplevotingapp_vote
-    tag: latest
+    repository: ghcr.io/rambiji51/vote
+    tag: "ed58a70d7c39a60e284685af636762159c1bf95c"
