@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vote-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/rambiji51/devops-demo-gitops.git
+    targetRevision: main
+    path: charts/vote
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
