@@ -3,4 +3,4 @@ replicaCount: 3
 vote:
   image:
     repository: ghcr.io/rambiji51/vote
-    tag: "be5a104864db775f1c12e76b9faed2e565ddf609"
+    tag: "532420ec6bd5916ff8a078d66ca2c2d0071a2995"
